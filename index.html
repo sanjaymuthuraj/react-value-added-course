@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Sanjay M | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>sanjay's deployment</h1>
+
+  <header>
+    <h1>Sanjay M</h1>
+    <p>Computer Science Student | Developer | Learner</p>
+    
+    <div class="theme-toggle">
+      <button id="toggleDarkMode">🌙 Toggle Dark Mode</button>
+    </div>
+
+    <h2 id="typing"></h2>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <p>Hello! I’m a Computer Science student passionate about software development, AI, and building useful applications. I enjoy solving problems and continuously learning new tech!</p>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <div class="skill">
+      <span>HTML</span>
+      <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>CSS</span>
+      <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>Python</span>
+      <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Women's Safety App</h3>
+      <p>An Android app for women's safety using GPS tracking. Built with Java and Firebase.</p>
+    </div>
+    <div class="project">
+      <h3>Notes Saver App</h3>
+      <p>A mobile app to store personalized notes in text files on SD card.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="confirmationMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sanjay M. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
